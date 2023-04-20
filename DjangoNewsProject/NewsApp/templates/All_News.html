@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h3>News List</h3>
+  {% if news %}
+    <div class="AllNewsGroup">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item disabled">News Topic</li>
+        {% for n in news %}
+        <li class="list-group-item">
+          <a href="{% url 'news-detail' pk=n.pk %}">{{ n.Name }}</a>
+          <a style="float: right;background-color: rgb(247, 250, 146);border-radius: 12px;padding: 0px 10px;color: black;margin-right: 7px;" href="{% url 'news-update' pk=n.pk %}">Edit</a>
+          <a style="float: right;background-color: rgb(221, 221, 221);border-radius: 12px;padding: 0px 10px;color: black;margin-right: 7px;" href="{% url 'news-delete' pk=n.pk %}">delete</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+
+  {% else %}
+    <div class="NoNewsItem" >
+      <p>No News Article is published yet</p>
+      <img src="https://media.istockphoto.com/id/1023919654/vector/blue-man-on-tv-screen-man-covering-mouth-by-two-hands.jpg?s=170x170&k=20&c=JcgQJeLVlLC45BucZuiwub5STRqgtMVXvqD5_Ir467k=" alt="NoNews"> 
+    </div>
+  {% endif %}
+
+  
+{% endblock %}

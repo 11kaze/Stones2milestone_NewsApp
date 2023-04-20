@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  {% if news.Image %}
+    <div class="row gx-5">
+      <div class="col-md-6 mb-4">
+        <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
+          
+            <img style="width: 100%;" src="{{ news.Image.url }}" alt="{{ news.Name }}" class="img-fluid" />
+            <a href="#!">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+            </a>
+        </div>
+      </div>
+    {% endif %}
+    <div class="col mb-4">
+      <h4><strong>{{ news.Name }}</strong></h4>
+      <span class="badge bg-warning px-2 py-1 shadow-1-strong mb-3">Author  {{ news.Author }}</span>
+      <span style="float: right; font-size:12px;">{{ news.Created_date }}</span> 
+      <p class="text-muted">
+        {{ news.Description }}
+      </p>
+      <a href="{{ news.Source }}" target="_blank"><button type="button"   class="btn visitPageSourceButton">Visit Source Page</button></a>
+    </div>
+  </div>
+
+{% endblock %}

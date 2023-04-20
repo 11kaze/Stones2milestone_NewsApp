@@ -1,0 +1,97 @@
+body {
+    background: #fffafa;
+    color: #333333;
+    margin-top: 0;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #444444;
+  }
+  
+  ul {
+    margin: 0;
+  }
+  
+  .bg-steel {
+    background-color: #5f788a;
+  }
+  .navbar{
+    padding: 0 3vw;
+  }
+  .site-header .navbar-nav .nav-link {
+    color: #cbd5db;
+  }
+  
+  .site-header .navbar-nav .nav-link:hover {
+    color: #ffffff;
+  }
+  
+  .site-header .navbar-nav .nav-link.active {
+    font-weight: 500;
+  }
+  
+  .addNewsButton{
+    padding: 7px;
+    font-size: large;
+    text-decoration: none !important;
+    color: #39a935;
+  }
+  .addNewsButton:hover{
+    /* border: 2px solid black; */
+    /* border-radius: 12px; */
+    color: rgb(16, 16, 16);
+    
+  }
+  .container {
+    background: #ffffff;
+    background-size: cover;
+    border: 1px solid #dddddd;
+    box-shadow: 10px 10px 23px #3430300d;
+    border-radius: 3px;
+    padding: 12px;
+    margin-top: 2vh;
+    min-height: 100vh;
+    min-width: 90vw;
+  }
+
+.NewsForm {
+    margin: auto;
+    padding-top: 20px;
+}
+.visitPageSourceButton{
+  color: black;
+  background-color: white;
+  padding: 3px 7px;
+  border: 2px solid #39a935;
+  box-shadow: 1px 2px 23px #dcdcdc;
+  border-radius: 5px;
+
+}
+.visitPageSourceButton:hover{
+  color: white;
+  background-color: #39a935;
+  box-shadow: 1px 2px 23px #b6b6b6;
+
+}
+.AllNewsGroup{
+  padding-top: 3vh; 
+}
+
+.NoNewsItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4vh;
+  /* border: 3px solid green; */
+}
+
+.NoNewsItem img{
+  border-radius: 50%;
+  /* border: 3px solid green; */
+}
+.NoNewsItem p{
+  
+  color: rgb(137, 137, 137);
+  /* border: 3px solid green; */
+}

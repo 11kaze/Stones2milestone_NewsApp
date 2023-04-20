@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+    <div class="NewsForm">
+        <h3>News Creation Form</h3>
+        <form action = "" method = "POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                {{ form|crispy }}
+            </fieldset>
+            <input type="submit" value=Submit>
+        </form>
+    </div>
+{% endblock %}
