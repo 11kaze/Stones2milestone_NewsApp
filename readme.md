@@ -28,3 +28,4 @@ python manage.py runserver
 ![Creation Form](./SampleImages/NewsCreationForm.png)
 ![Update Form](./SampleImages/EditForm.png)
 ![News Detail Page](./SampleImages/NewsDetailPage.png)
+![New Home Screen](./SampleImages/Home%20Screen.png)
